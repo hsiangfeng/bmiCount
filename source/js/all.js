@@ -109,7 +109,6 @@ function analysisBMI(item) {
 function deleteData(e) {
     e.preventDefault();
     if (e.target.tagName !== "A") { return }
-    console.log(e.target.dataset.index);
     let str = e.target.dataset.index;
     data.splice(str,1);
     localStorage.setItem("BMIKey",JSON.stringify(data));
